@@ -1,0 +1,433 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		45BBCEDEF8291DB3079A4B0B /* libPods-HHHttpRequest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 14811A97D3ECDB89AD6810AD /* libPods-HHHttpRequest.a */; };
+		471A7E631EC9DF23007313D9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 471A7E621EC9DF23007313D9 /* main.m */; };
+		471A7E661EC9DF23007313D9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 471A7E651EC9DF23007313D9 /* AppDelegate.m */; };
+		471A7E691EC9DF23007313D9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 471A7E681EC9DF23007313D9 /* ViewController.m */; };
+		471A7E6C1EC9DF23007313D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 471A7E6A1EC9DF23007313D9 /* Main.storyboard */; };
+		471A7E6E1EC9DF23007313D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 471A7E6D1EC9DF23007313D9 /* Assets.xcassets */; };
+		471A7E711EC9DF23007313D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 471A7E6F1EC9DF23007313D9 /* LaunchScreen.storyboard */; };
+		471A7E801EC9DFC4007313D9 /* HttpRequestControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 471A7E7C1EC9DFC3007313D9 /* HttpRequestControl.m */; };
+		471A7E811EC9DFC4007313D9 /* HttpRequestMsg.m in Sources */ = {isa = PBXBuildFile; fileRef = 471A7E7E1EC9DFC4007313D9 /* HttpRequestMsg.m */; };
+		471A7E851EC9F018007313D9 /* HHApiService.m in Sources */ = {isa = PBXBuildFile; fileRef = 471A7E841EC9F018007313D9 /* HHApiService.m */; };
+		471A7E881EC9F134007313D9 /* DemoApiService.m in Sources */ = {isa = PBXBuildFile; fileRef = 471A7E871EC9F134007313D9 /* DemoApiService.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		14811A97D3ECDB89AD6810AD /* libPods-HHHttpRequest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HHHttpRequest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		206AAAFD0BD9CF49CE5E77D6 /* Pods-HHHttpRequest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HHHttpRequest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HHHttpRequest/Pods-HHHttpRequest.debug.xcconfig"; sourceTree = "<group>"; };
+		3638F3CFF36A0DB723982347 /* Pods-HHHttpRequest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HHHttpRequest.release.xcconfig"; path = "Pods/Target Support Files/Pods-HHHttpRequest/Pods-HHHttpRequest.release.xcconfig"; sourceTree = "<group>"; };
+		471A7E5E1EC9DF23007313D9 /* HHHttpRequest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HHHttpRequest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		471A7E621EC9DF23007313D9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		471A7E641EC9DF23007313D9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		471A7E651EC9DF23007313D9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		471A7E671EC9DF23007313D9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		471A7E681EC9DF23007313D9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		471A7E6B1EC9DF23007313D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		471A7E6D1EC9DF23007313D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		471A7E701EC9DF23007313D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		471A7E721EC9DF23007313D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		471A7E7B1EC9DFC3007313D9 /* HttpRequestControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpRequestControl.h; sourceTree = "<group>"; };
+		471A7E7C1EC9DFC3007313D9 /* HttpRequestControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpRequestControl.m; sourceTree = "<group>"; };
+		471A7E7D1EC9DFC4007313D9 /* HttpRequestMsg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpRequestMsg.h; sourceTree = "<group>"; };
+		471A7E7E1EC9DFC4007313D9 /* HttpRequestMsg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpRequestMsg.m; sourceTree = "<group>"; };
+		471A7E821EC9DFD4007313D9 /* MsgConstant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MsgConstant.h; sourceTree = "<group>"; };
+		471A7E831EC9F018007313D9 /* HHApiService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHApiService.h; sourceTree = "<group>"; };
+		471A7E841EC9F018007313D9 /* HHApiService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHApiService.m; sourceTree = "<group>"; };
+		471A7E861EC9F134007313D9 /* DemoApiService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoApiService.h; sourceTree = "<group>"; };
+		471A7E871EC9F134007313D9 /* DemoApiService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoApiService.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		471A7E5B1EC9DF23007313D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45BBCEDEF8291DB3079A4B0B /* libPods-HHHttpRequest.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		471A7E551EC9DF23007313D9 = {
+			isa = PBXGroup;
+			children = (
+				471A7E781EC9DFA6007313D9 /* HttpRequest */,
+				471A7E601EC9DF23007313D9 /* HHHttpRequest */,
+				471A7E5F1EC9DF23007313D9 /* Products */,
+				993DDAE0C0C9D33054103FC9 /* Pods */,
+				52A15D9243340C8BA47DCF19 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		471A7E5F1EC9DF23007313D9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				471A7E5E1EC9DF23007313D9 /* HHHttpRequest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		471A7E601EC9DF23007313D9 /* HHHttpRequest */ = {
+			isa = PBXGroup;
+			children = (
+				471A7E641EC9DF23007313D9 /* AppDelegate.h */,
+				471A7E651EC9DF23007313D9 /* AppDelegate.m */,
+				471A7E671EC9DF23007313D9 /* ViewController.h */,
+				471A7E681EC9DF23007313D9 /* ViewController.m */,
+				471A7E6A1EC9DF23007313D9 /* Main.storyboard */,
+				471A7E6D1EC9DF23007313D9 /* Assets.xcassets */,
+				471A7E6F1EC9DF23007313D9 /* LaunchScreen.storyboard */,
+				471A7E721EC9DF23007313D9 /* Info.plist */,
+				471A7E611EC9DF23007313D9 /* Supporting Files */,
+				471A7E861EC9F134007313D9 /* DemoApiService.h */,
+				471A7E871EC9F134007313D9 /* DemoApiService.m */,
+			);
+			path = HHHttpRequest;
+			sourceTree = "<group>";
+		};
+		471A7E611EC9DF23007313D9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				471A7E621EC9DF23007313D9 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		471A7E781EC9DFA6007313D9 /* HttpRequest */ = {
+			isa = PBXGroup;
+			children = (
+				471A7E7B1EC9DFC3007313D9 /* HttpRequestControl.h */,
+				471A7E7C1EC9DFC3007313D9 /* HttpRequestControl.m */,
+				471A7E7D1EC9DFC4007313D9 /* HttpRequestMsg.h */,
+				471A7E7E1EC9DFC4007313D9 /* HttpRequestMsg.m */,
+				471A7E831EC9F018007313D9 /* HHApiService.h */,
+				471A7E841EC9F018007313D9 /* HHApiService.m */,
+				471A7E821EC9DFD4007313D9 /* MsgConstant.h */,
+			);
+			path = HttpRequest;
+			sourceTree = "<group>";
+		};
+		52A15D9243340C8BA47DCF19 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				14811A97D3ECDB89AD6810AD /* libPods-HHHttpRequest.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		993DDAE0C0C9D33054103FC9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				206AAAFD0BD9CF49CE5E77D6 /* Pods-HHHttpRequest.debug.xcconfig */,
+				3638F3CFF36A0DB723982347 /* Pods-HHHttpRequest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		471A7E5D1EC9DF23007313D9 /* HHHttpRequest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 471A7E751EC9DF23007313D9 /* Build configuration list for PBXNativeTarget "HHHttpRequest" */;
+			buildPhases = (
+				7376E652839C8A24FA9F083D /* [CP] Check Pods Manifest.lock */,
+				471A7E5A1EC9DF23007313D9 /* Sources */,
+				471A7E5B1EC9DF23007313D9 /* Frameworks */,
+				471A7E5C1EC9DF23007313D9 /* Resources */,
+				1A0880D006F9B72285949AEC /* [CP] Embed Pods Frameworks */,
+				ABF222247F0DD0A29253E89E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HHHttpRequest;
+			productName = HHHttpRequest;
+			productReference = 471A7E5E1EC9DF23007313D9 /* HHHttpRequest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		471A7E561EC9DF23007313D9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Hu Heng";
+				TargetAttributes = {
+					471A7E5D1EC9DF23007313D9 = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = PW79S3U69P;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 471A7E591EC9DF23007313D9 /* Build configuration list for PBXProject "HHHttpRequest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 471A7E551EC9DF23007313D9;
+			productRefGroup = 471A7E5F1EC9DF23007313D9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				471A7E5D1EC9DF23007313D9 /* HHHttpRequest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		471A7E5C1EC9DF23007313D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				471A7E711EC9DF23007313D9 /* LaunchScreen.storyboard in Resources */,
+				471A7E6E1EC9DF23007313D9 /* Assets.xcassets in Resources */,
+				471A7E6C1EC9DF23007313D9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1A0880D006F9B72285949AEC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HHHttpRequest/Pods-HHHttpRequest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7376E652839C8A24FA9F083D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		ABF222247F0DD0A29253E89E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HHHttpRequest/Pods-HHHttpRequest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		471A7E5A1EC9DF23007313D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				471A7E851EC9F018007313D9 /* HHApiService.m in Sources */,
+				471A7E801EC9DFC4007313D9 /* HttpRequestControl.m in Sources */,
+				471A7E691EC9DF23007313D9 /* ViewController.m in Sources */,
+				471A7E661EC9DF23007313D9 /* AppDelegate.m in Sources */,
+				471A7E881EC9F134007313D9 /* DemoApiService.m in Sources */,
+				471A7E811EC9DFC4007313D9 /* HttpRequestMsg.m in Sources */,
+				471A7E631EC9DF23007313D9 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		471A7E6A1EC9DF23007313D9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				471A7E6B1EC9DF23007313D9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		471A7E6F1EC9DF23007313D9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				471A7E701EC9DF23007313D9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		471A7E731EC9DF23007313D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		471A7E741EC9DF23007313D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		471A7E761EC9DF23007313D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 206AAAFD0BD9CF49CE5E77D6 /* Pods-HHHttpRequest.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PW79S3U69P;
+				INFOPLIST_FILE = HHHttpRequest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = GnehHu.HHHttpRequest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		471A7E771EC9DF23007313D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3638F3CFF36A0DB723982347 /* Pods-HHHttpRequest.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PW79S3U69P;
+				INFOPLIST_FILE = HHHttpRequest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = GnehHu.HHHttpRequest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		471A7E591EC9DF23007313D9 /* Build configuration list for PBXProject "HHHttpRequest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				471A7E731EC9DF23007313D9 /* Debug */,
+				471A7E741EC9DF23007313D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		471A7E751EC9DF23007313D9 /* Build configuration list for PBXNativeTarget "HHHttpRequest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				471A7E761EC9DF23007313D9 /* Debug */,
+				471A7E771EC9DF23007313D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 471A7E561EC9DF23007313D9 /* Project object */;
+}
