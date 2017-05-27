@@ -18,6 +18,7 @@
 		471A7E811EC9DFC4007313D9 /* HttpRequestMsg.m in Sources */ = {isa = PBXBuildFile; fileRef = 471A7E7E1EC9DFC4007313D9 /* HttpRequestMsg.m */; };
 		471A7E851EC9F018007313D9 /* HHApiService.m in Sources */ = {isa = PBXBuildFile; fileRef = 471A7E841EC9F018007313D9 /* HHApiService.m */; };
 		471A7E881EC9F134007313D9 /* DemoApiService.m in Sources */ = {isa = PBXBuildFile; fileRef = 471A7E871EC9F134007313D9 /* DemoApiService.m */; };
+		4720AF8B1ED98401008ED8AB /* HttpCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 4720AF8A1ED98401008ED8AB /* HttpCache.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,8 @@
 		471A7E841EC9F018007313D9 /* HHApiService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHApiService.m; sourceTree = "<group>"; };
 		471A7E861EC9F134007313D9 /* DemoApiService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoApiService.h; sourceTree = "<group>"; };
 		471A7E871EC9F134007313D9 /* DemoApiService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoApiService.m; sourceTree = "<group>"; };
+		4720AF891ED98401008ED8AB /* HttpCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpCache.h; sourceTree = "<group>"; };
+		4720AF8A1ED98401008ED8AB /* HttpCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpCache.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +108,8 @@
 		471A7E781EC9DFA6007313D9 /* HttpRequest */ = {
 			isa = PBXGroup;
 			children = (
+				4720AF891ED98401008ED8AB /* HttpCache.h */,
+				4720AF8A1ED98401008ED8AB /* HttpCache.m */,
 				471A7E7B1EC9DFC3007313D9 /* HttpRequestControl.h */,
 				471A7E7C1EC9DFC3007313D9 /* HttpRequestControl.m */,
 				471A7E7D1EC9DFC4007313D9 /* HttpRequestMsg.h */,
@@ -258,6 +263,7 @@
 			files = (
 				471A7E851EC9F018007313D9 /* HHApiService.m in Sources */,
 				471A7E801EC9DFC4007313D9 /* HttpRequestControl.m in Sources */,
+				4720AF8B1ED98401008ED8AB /* HttpCache.m in Sources */,
 				471A7E691EC9DF23007313D9 /* ViewController.m in Sources */,
 				471A7E661EC9DF23007313D9 /* AppDelegate.m in Sources */,
 				471A7E881EC9F134007313D9 /* DemoApiService.m in Sources */,

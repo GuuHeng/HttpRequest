@@ -123,6 +123,13 @@
     Unlock();
 }
 
+- (void)removeRequestMsgFromRecord:(HttpRequestMsg *)msg
+{
+    Lock();
+    [_requestRecord removeObjectForKey:@(msg.requestTask.taskIdentifier)];
+    Unlock();
+}
+
 - (void)cancelRequestMsg:(HttpRequestMsg *)msg
 {
     [msg.requestTask cancel];
@@ -258,6 +265,10 @@
         msg.error = requestError;
         [msg.delegate receiveDidFailed:msg];
     }
+    
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self removeRequestMsgFromRecord:msg];
+    });
 }
 
 @end
