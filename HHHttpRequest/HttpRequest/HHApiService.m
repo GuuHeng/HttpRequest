@@ -19,4 +19,14 @@
     return self;
 }
 
+- (void)receiveDidFinished:(HttpRequestMsg *)receiveMsg
+{
+    
+}
+
+- (void)receiveDidFailed:(HttpRequestMsg *)receiveMsg
+{
+    
+}
+
 @end
