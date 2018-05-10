@@ -16,4 +16,4 @@ note:
 ``` 
     1. 导入‘AFNetworking’
     2. 继承 HHApiService 
-    3. 根据需要在继承类中创建单个或多个请求Msg（避免commond模式引起的类爆炸）```
+    3. 根据需要在继承类中创建单个或多个请求Msg（避免commond模式引起的类爆炸）
